@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1B2A4A">
+  <title>PocketStore</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- App Shell: barra superior fija -->
+  <header class="topbar">
+    <h1>PocketStore</h1>
+    <span id="status" class="status" role="status">Conectando…</span>
+  </header>
+
+  <!-- App Shell: contenedor del contenido dinámico -->
+  <main id="catalog" class="catalog" aria-live="polite">
+    <p class="empty">Cargando catálogo…</p>
+  </main>
+
+  <!-- App Shell: pie de página -->
+  <footer class="footer">PocketStore · Catálogo disponible sin internet</footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
